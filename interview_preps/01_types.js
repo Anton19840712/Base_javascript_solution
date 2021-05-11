@@ -1,8 +1,7 @@
-console.log("Hi")
-console.log(typeof 0)
-console.log(typeof true)
-console.log(typeof "hello")
-console.log(typeof underfined)
-console.log(typeof Math)
-console.log(typeof Symbol("JS"))
-console.log(typeof null)
+console.log(typeof 0) //number
+console.log(typeof true) //boolean
+console.log(typeof "hello") //string
+console.log(typeof underfined) //undefined
+console.log(typeof Math) //object
+console.log(typeof Symbol("JS")) //symbol
+console.log(typeof null) //object
