@@ -6,7 +6,7 @@
 </h1>
 
 ## Key Features
-MY PYTHON BASIC NOTES
+MY JS BASIC NOTES
 ## How To Use
 Just download and read)
 
