@@ -1,0 +1,8 @@
+console.log("Hi")
+console.log(typeof 0)
+console.log(typeof true)
+console.log(typeof "hello")
+console.log(typeof underfined)
+console.log(typeof Math)
+console.log(typeof Symbol("JS"))
+console.log(typeof null)
