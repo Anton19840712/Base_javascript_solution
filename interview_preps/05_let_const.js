@@ -14,11 +14,12 @@ console.log("B first block:", b)
 
 const PORT = 8080
 const array = ["Javascript", "is", "Awesome"]
-array.push("!")
-array[0] = "JS"
+array.push("!") //adds to the end
+array[0] = "JS" //adds to the first
 console.log(array)
 
-const obj = {}
+const obj = {} //dictionary
+
 obj.name = "Antonio"
 obj.age = 36
 
