@@ -10,13 +10,16 @@ result = sayHelloToPerson("Irina")
 result()
 
 console.log("2 nd sample-------------")
+//Seems to me that is as a class oblect in C#
+//Because we can address the methods of this function)) sounds like heresy)
+//
 function createFrameworkManager() {
 	const fw = ["Angular", "React"]
 	return {
 		print: function () {
 			console.log(fw.join(" "))
-		}
-		,
+		},
+		// I don't know why I need this)
 		add: function (framework) {
 			fw.push(framework)
 		},
