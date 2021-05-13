@@ -2,17 +2,17 @@ const person = {
 	name: "Antonio",
 	surname: "Stark",
 	knows: function (what, name) {
-		//this is a method))
+		// method in a class person - thinking so - it is better to understand
 		console.log(`You know ${what} because you are ${name} ${this.surname}`)
 	},
 }
 
-person.knows("all", person.name)
-person.knows("all", "Andrey")
+person.knows("all", person.name) // pull the method  knows from person class
+person.knows("all", "Andrey") // do the same
 
-const irina = { surname: "Irina" }
+const irina = { surname: "Irina" } // hardcoding the variable irina
 person.knows("something special", irina.surname)
-person.knows.call(irina, "something special", "")
+person.knows.call(irina, "something special", "") // using knows inside call method 
 person.knows.call(irina, "something special", "Maria") //You know something special because you are Maria Irina //concatenates here Maria and Irina)) what a language)
 person.knows.call("something special", "Maria") //You know Maria because you are undefined undefined
 person.knows.call(irina, "something special", "Maria", irina.surname) //You know something special because you are Maria Irina
