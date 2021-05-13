@@ -9,15 +9,14 @@ function Cat(name, color) {
 Cat.prototype.voice = function () {
 	console.log(`Cat ${this.name} says myay`)
 }
-
 const cat = new Cat("Cat", "white")
-
 console.log(Cat.protoype)
+
 console.log(cat)
 console.log(Cat.voice)
 console.log((Cat.voice = "loudly"))
 console.log(cat.__proto__ === Cat.prototype)
-console.log(cat.constructor)
+console.log(cat.constructor) //[Function: Cat] { voice: 'loudly' }
 
 //=================
 
