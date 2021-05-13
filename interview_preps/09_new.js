@@ -5,6 +5,8 @@ function Cat(color, name) {
 }
 
 const cat = new Cat("black", "Katya")
+console.log(cat) //Cat { color: 'black', name: 'Katya' }
+console.table(cat)
 console.log(cat.color)
 
 function myNewCat(constructor, ...args) {
@@ -13,10 +15,10 @@ function myNewCat(constructor, ...args) {
 	return constructor.apply(obj, args) || obj
 }
 
-const cat = myNewCat(Cat, "black", "Cat")
-console.log(cat)
+const hiscat = myNewCat(Cat, "black", "Cat")
+console.log(hiscat)
 
 //------
-
-const cat = new Cat()
-console.log(cat)
+console.log("new word using")
+const mycat = new Cat("red", "Musya") //more familiar like in C#
+console.log(mycat)
