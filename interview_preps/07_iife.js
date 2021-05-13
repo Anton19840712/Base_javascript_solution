@@ -1,10 +1,12 @@
 //Immediate Invoked Function Expression
 let result = []
 for (var i = 0; i < 5; i++) {
+	console.log(i)
 	result.push(function () {
 		console.log(i)
 	})
 }
+console.log("-----")
 
 result[2]()
 result[4]()
