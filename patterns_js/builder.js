@@ -5,17 +5,14 @@ class Car {
 		this.signaling = false
 	}
 }
-
 class CarBuilder {
 	constructor() {
 		this.car = new Car()
 	}
-
 	addAutopilot(autopilot) {
 		this.car.autopilot = autopilot
 		return this
 	}
-
 	addParktronic(parktronic) {
 		this.car.parktronic = parktronic
 		return this
@@ -28,19 +25,16 @@ class CarBuilder {
 		this.car.engine = engine
 		return this
 	}
-
 	build() {
 		return this.car
 	}
 }
 
 // using
-
 var myCar = new CarBuilder()
 	.addAutopilot(true)
 	.addParktronic(true)
 	.addSignaling(true)
 	.updateEngine("V8")
 	.build() //need to return created class
-
 console.log(myCar)
