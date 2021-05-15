@@ -5,12 +5,10 @@ class TeslaCar {
 		this.interior = interior
 		this.autopilot = autopilot
 	}
-
 	produce() {
 		return new TeslaCar(this.model, this.price, this.interior, this.autopilot)
 	}
 }
-
 //Produce base auto
 //const prototypeCar = new TeslaCar("X6", "300000", "S", "True").produce()
 //console.log(prototypeCar)
