@@ -14,9 +14,13 @@ let instance
 
 class Counter {
 	constructor() {
-		//function constructor
-		if (!instance) instance = this //if instance is not exists - constructor creates it
-		return instance // and returns it
+		if (typeof Counter.instance === "object") {
+			//function constructor
+			return Counter.instance //if instance is not exists - constructor creates it // and returns it
+		}
+		this.count = 0
+		Counter.instance = this
+		return this
 	}
 
 	getCount() {
@@ -27,3 +31,14 @@ class Counter {
 		return instance.count++
 	}
 }
+
+const myCount1 = new Counter()
+const myCount2 = new Counter()
+
+myCount1.increaseCount()
+myCount1.increaseCount()
+myCount2.increaseCount()
+myCount2.increaseCount()
+
+console.log(parseInt(myCount2.getCount()))
+console.log(+myCount1.getCount())
