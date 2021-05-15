@@ -17,7 +17,6 @@ const prototypeCar = new TeslaCar("X6", "300000", "S", "True")
 const car1 = prototypeCar.produce()
 const car2 = prototypeCar.produce()
 const car3 = prototypeCar.produce()
-
 // Adding elements for particular car
 car1.interior = "white"
 car1.autopilot = true
