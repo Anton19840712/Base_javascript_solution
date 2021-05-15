@@ -23,22 +23,22 @@ class Counter {
 		return this
 	}
 
-	getCount() {
-		return instance.count
+	getCounter() {
+		return this.count
 	}
 
-	increaseCount() {
-		return instance.count++
+	increaseCounter() {
+		return this.count++
 	}
 }
 
 const myCount1 = new Counter()
 const myCount2 = new Counter()
 
-myCount1.increaseCount()
-myCount1.increaseCount()
-myCount2.increaseCount()
-myCount2.increaseCount()
+myCount1.increaseCounter()
+myCount1.increaseCounter()
+myCount2.increaseCounter()
+myCount2.increaseCounter()
 
-console.log(parseInt(myCount2.getCount()))
-console.log(+myCount1.getCount())
+console.log(parseInt(myCount2.getCounter()))
+console.log(+myCount1.getCounter())
