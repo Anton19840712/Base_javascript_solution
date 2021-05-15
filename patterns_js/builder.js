@@ -29,8 +29,7 @@ class CarBuilder {
 		return this.car
 	}
 }
-
-// using
+// using of patter
 var myCar = new CarBuilder()
 	.addAutopilot(true)
 	.addParktronic(true)
