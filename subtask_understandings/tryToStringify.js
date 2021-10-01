@@ -1,3 +1,5 @@
+// Form1.HIDDENITEMS_TO.value = JSON.stringify(_items);
+
 let element = [
 	{
 		Quantity: 500,
@@ -15,5 +17,5 @@ let element = [
 	},
 ]
 
-//console.log(JSON.stringify(element, null, 15))
-console.log(typeof element)
+console.log(JSON.stringify(element, null, 15))
+//console.log(typeof element)
