@@ -77,6 +77,7 @@ console.log([...arr, 33, 99]) //[ 44, 55, 33, 99 ] //adding after
 console.log([33, 99, ...arr]) //[ 33, 99, 44, 55 ] //adding before
 
 //#7
+//Unduplicate array:
 const myArr = [3, 4, 3, 5, 3, 4, 5, 6, 7, 12, 3, 4, 1, 12, 1]
 console.log(new Set(myArr))
 console.log(...new Set(myArr)) // no dupes : 3 4 5 6 7 12 1

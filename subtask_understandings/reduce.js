@@ -1,5 +1,5 @@
 // the main idea with reduce is that this works like an iterator with each element,
-// so you can do everything with each element: find total, evens, double them, filtering and so on...
+// so you can do everything with each element: find total, evens, double them, filtering and so on...by iterating each element in collection.
 // we can calculate elements whatever we want by condition.
 
 // When chaining with map and filter, you end up doing the same job twice.
@@ -117,7 +117,7 @@ const data = [
 const uniqueColors = data.reduce((total, amount) => {
 	amount.c.forEach((color) => {
 		if (total.indexOf(color) === -1) {
-			//if current is equal to previous(-1), then take it to collection
+			//if current is equal to previous(-1), then take it to the collection
 			total.push(color)
 		}
 	})

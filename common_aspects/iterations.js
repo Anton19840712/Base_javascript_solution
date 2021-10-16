@@ -9,7 +9,7 @@ const people = [
 
 // 1 classic way:
 console.log('1 classic way:')
-for (let i = 0; i < people.length; i++) {
+for (let i = 0; i < people.length; i++) { //use key word let
     console.log(people[i])
 }
 
@@ -19,7 +19,7 @@ for (let person of people) {
     console.log(person)
 }
 
-// 3 classic way:
+// 3 classic way using foreach:
 console.log('3 classic way:')
 people.forEach(function(person, index, arrPeople){ // by row, by index, whole array
     console.log(person);
@@ -29,14 +29,15 @@ people.forEach(function(person, index, arrPeople){ // by row, by index, whole ar
 
 // 4 classic way:
 console.log('4 classic way:')
-people.forEach((person)=>console.log(person))
+people.forEach((person)=>console.log(person)) //using arrow syntax
 
 // map way
+// map means we map person element on people element - smth on smth.
 console.log('map way:')
 const newPeople = people.map(person =>`${person.name}`) //take a look at "`" not "'" !!!
 console.log(newPeople); //we have array in output: []
 
-// filter way
+//filtering: // filter way
 console.log('filter way:')
 const adults = people.filter(person => person.age > 38 ) //
 console.log(adults); //we have array in output: []

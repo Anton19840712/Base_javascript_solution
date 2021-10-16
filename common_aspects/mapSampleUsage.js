@@ -10,7 +10,7 @@ visits
 //console.log(visits)
 
 function lastVisit(user) {
-	return visits.get(user)
+	return visits.get(user) // we have specific get method here in map structure
 }
 
 console.log(lastVisit(users[2]))
