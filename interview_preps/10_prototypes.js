@@ -1,11 +1,17 @@
 //__proto__
 // Object.getPrototypeOf()
 
+
+//Речь идет о прототипном наследовании.
+
+//we hava a cat object...
+//we create it here...
 function Cat(name, color) {
 	this.name = name
 	this.color = color
 }
 
+//далее мы отпрототипировались, создали НОВЫЙ объект на основании уже существующего и добавили в него свойство voice.
 Cat.prototype.voice = function () {
 	console.log(`Cat ${this.name} says myay`)
 }
@@ -20,7 +26,9 @@ console.log(cat.constructor) //[Function: Cat] { voice: 'loudly' }
 
 //=================
 
+//Просто создаем объект Person
 function Person() {}
+//Наследуемся от него и добавляем в новый объект ноги и кожу.
 Person.prototype.legs = 2
 Person.prototype.skin = "white"
 
